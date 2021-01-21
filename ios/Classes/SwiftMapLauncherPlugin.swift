@@ -137,10 +137,12 @@ private func showDirections(mapType: MapType, url: String, destinationTitle: Str
 
 
 private func isMapAvailable(map: Map) -> Bool {
-    if map.mapType == MapType.apple {
         return true
-    }
-    return UIApplication.shared.canOpenURL(URL(string:map.urlPrefix!)!)
+
+   // if map.mapType == MapType.apple {
+   //     return true
+   // }
+   // return UIApplication.shared.canOpenURL(URL(string:map.urlPrefix!)!)
 }
 
 
